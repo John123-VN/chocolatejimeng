@@ -1,5 +1,5 @@
 # ChocolateJimeng
-[Subscribe to my channel!][Here.](https://youtube.com/@test99-o3y)
+Subscribe to my channel! [Here.](https://youtube.com/@test99-o3y)
 
 **A Fork of Jimeng API** - Based on the reverse engineering of [Jimeng AI (China version of Dreamina)](https://jimeng.jianying.com) and [Dreamina (international version)](https://dreamina.capcut.com).
 
