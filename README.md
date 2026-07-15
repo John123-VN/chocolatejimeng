@@ -1,3 +1,83 @@
+# ChocolateJimeng
+[Subscribe to my channel!][Here.](https://youtube.com/@test99-o3y)
+
+**A Fork of Jimeng API** - Based on the reverse engineering of [Jimeng AI (China version of Dreamina)](https://jimeng.jianying.com) and [Dreamina (international version)](https://dreamina.capcut.com).
+
+[![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/) [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue.svg)](https://www.typescriptlang.org/) [![Docker](https://img.shields.io/badge/Docker-Supported-blue.svg)](https://www.docker.com/) [![License](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](LICENSE) [!![Discord](https://shields.io{7DNvWxrfeS}?label=Discord&logo=discord)](discord.gg/7DNvWxrfeS)
+
+## ✨ Features
+
+- 🎨 **AI Image Generation**: Supports multiple models and resolutions (default 2K, supports 4K, 1K).
+- 🖼️ **Image-to-Image Synthesis**: Supports local images or image URLs.
+- 🎬 **AI Video Generation**: Supports text-to-video generation, and adds local image upload for image-to-video on the China site.
+- 🌐 **International Site Support**: Added support for text-to-image and image-to-image APIs on Dreamina international sites. Open an issue if you run into problems.
+- 🔄 **Smart Polling**: Adaptive polling mechanism to optimize generation efficiency.
+- 🛡️ **Unified Exception Handling**: Comprehensive error handling and retry mechanism.
+- 📊 **Detailed Logs**: Structured logging for easy debugging.
+- 🐳 **Docker Support**: Containerized deployment, ready to use out of the box.
+- ⚙️ **Log Level Control**: Dynamically adjust log output level through configuration files.
+
+> ⭐ **If this project helps you, consider giving it a Star.**
+
+## ⚠ Risk Warning
+
+- This project is for research and educational purposes only. It does not accept any financial donations or transactions!
+- For personal use and research only. Avoid putting pressure on the official servers. Abuse may result in account bans or legal action.
+- For personal use and research only. Avoid putting pressure on the official servers. Abuse may result in account bans or legal action.
+- For personal use and research only. Avoid putting pressure on the official servers. Abuse may result in account bans or legal action.
+
+## New Feature Highlights
+
+### `ratio` and `resolution` Parameter Support
+
+Image dimensions are now controlled by the `ratio` and `resolution` parameters, giving you more flexibility. The default `resolution` is set to `2k`.
+
+```bash
+curl -X POST http://localhost:5100/v1/images/generations \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer YOUR_SESSION_ID" \
+  -d \
+    "{\"model\": \"jimeng-4.5\", \"prompt\": \"A beautiful girl, film-like feel\", \"ratio\": \"4:3\", \"resolution\": \"2k\"}"
+```
+
+**Supported resolutions**: `1k`, `2k`, `4k`
+
+**Supported ratios**: `1:1`, `4:3`, `3:4`, `16:9`, `9:16`, `3:2`, `2:3`, `21:9`
+
+# Quick Start
+### Getting 'sessionid'
+- Getting your `sessionid` works the same way on both the China site (Jimeng) and international sites (Dreamina) — see the screenshot below.
+> **Note 1**: The API endpoints are the same for the China site and international sites, but use different prefixes:
+> - **China site**: Use the `sessionid` directly, e.g., `Bearer your_session_id`
+> - **US site**: Add **us-** prefix, e.g., `Bearer us-your_session_id`
+> - **Hong Kong site**: Add **hk-** prefix, e.g., `Bearer hk-your_session_id`
+> - **Japan site**: Add **jp-** prefix, e.g., `Bearer jp-your_session_id`
+> - **Singapore site**: Add **sg-** prefix, e.g., `Bearer sg-your_session_id`
+>
+> **Note 2**: Supports binding proxies (HTTP/SOCKS5, etc.) in the Token, see [Token Bound Proxy Feature](#token-bound-proxy-feature-new) for details.
+>
+> **Note 3**: The China site and international sites now support both *text-to-image* and *image-to-image*. The nanobanana and nanobananapro models are available on international sites.
+>
+> **Note 4**: Resolution rules when using the nanobanana model on international sites:
+> - **US site (us-)**: Images are fixed at **1024x1024** with **2k** resolution, ignoring user-provided ratio and resolution parameters
+> - **Hong Kong/Japan/Singapore sites (hk-/jp-/sg-)**: Fixed **1k** resolution, but supports custom `ratio` values (e.g., 16:9, 4:3, etc.)
+
+![](https://github.com/iptag/jimeng-api/blob/main/get_sessionid.png)
+
+### Environment Requirements
+
+- Node.js 18+
+- npm or yarn
+- Docker (optional)
+
+Too lazy to add more descriptions :P
+
+
+
+
+
+
+
 # Jimeng API
 
 [中文文档](README.CN.md)
