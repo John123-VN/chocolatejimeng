@@ -3,7 +3,9 @@ Subscribe to my channel! [Here.](https://youtube.com/@test99-o3y)
 
 **A Fork of Jimeng API** - Based on the reverse engineering of [Jimeng AI (China version of Dreamina)](https://jimeng.jianying.com) and [Dreamina (international version)](https://dreamina.capcut.com).
 
-[![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/) [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue.svg)](https://www.typescriptlang.org/) [![Docker](https://img.shields.io/badge/Docker-Supported-blue.svg)](https://www.docker.com/) [![License](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](LICENSE) [!![Discord](https://shields.io{7DNvWxrfeS}?label=Discord&logo=discord)](discord.gg/7DNvWxrfeS)
+[![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/) [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue.svg)](https://www.typescriptlang.org/) [![Docker](https://img.shields.io/badge/Docker-Supported-blue.svg)](https://www.docker.com/) [![License](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](LICENSE)
+
+Discord Server: [https://discord.gg/7DNvWxrfeS](https://discord.gg/7DNvWxrfeS)
 
 ## ✨ Features
 
